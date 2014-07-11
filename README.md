@@ -24,21 +24,21 @@ or download the css on github and include in your project.
 .small-caps { font-variant: small-caps; }
 .fv-i       { font-variant: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .fv-norm-ns    { font-variant: normal; }
   .fv-sc-ns,
   .small-caps-ns { font-variant: small-caps; }
   .fv-i-ns       { font-variant: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .fv-norm-m    { font-variant: normal; }
   .fv-sc-m,
   .small-caps-m { font-variant: small-caps; }
   .fv-i-m       { font-variant: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .fv-norm-l    { font-variant: normal; }
   .fv-sc-l,
   .small-caps-l { font-variant: small-caps; }
