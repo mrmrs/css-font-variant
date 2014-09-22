@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-font-variant)
 ## File Size
 
 728B font-variant.css
-558B font-variant.min.css
+558B font-variant.min.css 
+182B minified and gzipped
 
 ## The Code
 ```
