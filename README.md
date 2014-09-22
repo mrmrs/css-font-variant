@@ -9,13 +9,18 @@
 *  -l  = large
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-font-variant
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-font-variant)
+
 
 ## File Size
 
+728B font-variant.css
+558B font-variant.min.css
 
 ## The Code
 ```
