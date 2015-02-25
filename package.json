@@ -1,7 +1,7 @@
 {
   "name": "css-font-variant",
   "style": "font-variant.css",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "homepage": "http://github.com/mrmrs/css-font-variant",
   "description": "Css module of single purpose classes for font variant",
   "keywords": [
