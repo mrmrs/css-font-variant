@@ -1,84 +1,98 @@
-# CSS FONT VARIANT
+# css-font-variant 0.0.7
 
-  Mobile-first classes for css-font-variant.
-  Set the desired css-font-variant on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
+Css module of single purpose classes for font variant
 
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
+#### Stats
 
-## Install
-Grab the css partial from github and include it in your project or alternatively
-you can install it via npm:
+210 | 16 | 12
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev css-font-variant
 ```
-View on [npm](https://www.npmjs.org/package/css-font-variant)
 
+#### With Git
 
-## File Size
-
-728B font-variant.css
-558B font-variant.min.css
-182B minified and gzipped
-
-## The Code
 ```
-.fv-norm    { font-variant: normal; }
-.fv-sc,
-.small-caps { font-variant: small-caps; }
-.fv-i       { font-variant: inherit; }
+git clone https://github.com/tachyons-css/css-font-variant
+```
 
+## Usage
+
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "css-font-variant";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/css-font-variant">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
+/*
+   FONT VARIANT
+*/
+.fv-norm { font-variant: normal; }
+.fv-sc, .small-caps { font-variant: small-caps; }
+.fv-i { font-variant: inherit; }
 @media screen and (min-width: 48em) {
-  .fv-norm-ns    { font-variant: normal; }
-  .fv-sc-ns,
-  .small-caps-ns { font-variant: small-caps; }
-  .fv-i-ns       { font-variant: inherit; }
+ .fv-norm-ns { font-variant: normal; }
+ .fv-sc-ns, .small-caps-ns { font-variant: small-caps; }
+ .fv-i-ns { font-variant: inherit; }
 }
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .fv-norm-m    { font-variant: normal; }
-  .fv-sc-m,
-  .small-caps-m { font-variant: small-caps; }
-  .fv-i-m       { font-variant: inherit; }
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .fv-norm-m { font-variant: normal; }
+ .fv-sc-m, .small-caps-m { font-variant: small-caps; }
+ .fv-i-m { font-variant: inherit; }
 }
-
-@media screen and (min-width: 64em)  {
-  .fv-norm-l    { font-variant: normal; }
-  .fv-sc-l,
-  .small-caps-l { font-variant: small-caps; }
-  .fv-i-l       { font-variant: inherit; }
+@media screen and (min-width: 64em) {
+ .fv-norm-l { font-variant: normal; }
+ .fv-sc-l, .small-caps-l { font-variant: small-caps; }
+ .fv-i-l { font-variant: inherit; }
 }
-
 ```
 
-## Author
+## Contributing
 
-[http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
-[http://mrmrs.io - Open source projects](http://mrmrs.io)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
