@@ -1,7 +1,7 @@
 {
   "name": "css-font-variant",
   "style": "font-variant.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-font-variant",
   "description": "Css module of single purpose classes for font variant",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-font-variant.css > css/css-font-variant.css && tachyons src/css-font-variant.css --minify > css/css-font-variant.min.css && tachyons src/css-font-variant.css --generate-docs --package=../../package.json > readme.md"
