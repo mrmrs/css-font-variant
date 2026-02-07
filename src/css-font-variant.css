@@ -8,10 +8,10 @@
 .fv-i       { font-variant: inherit; }
 
 @media screen and (min-width: 48em) {
-  .fv-norm-ns    { font-variant: normal; }
-  .fv-sc-ns,
-  .small-caps-ns { font-variant: small-caps; }
-  .fv-i-ns       { font-variant: inherit; }
+  .fv-norm-s    { font-variant: normal; }
+  .fv-sc-s,
+  .small-caps-s { font-variant: small-caps; }
+  .fv-i-s       { font-variant: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
