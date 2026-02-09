@@ -7,21 +7,21 @@
 .small-caps { font-variant: small-caps; }
 .fv-i       { font-variant: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .fv-norm-s    { font-variant: normal; }
   .fv-sc-s,
   .small-caps-s { font-variant: small-caps; }
   .fv-i-s       { font-variant: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .fv-norm-m    { font-variant: normal; }
   .fv-sc-m,
   .small-caps-m { font-variant: small-caps; }
   .fv-i-m       { font-variant: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .fv-norm-l    { font-variant: normal; }
   .fv-sc-l,
   .small-caps-l { font-variant: small-caps; }
