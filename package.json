@@ -1,38 +1,44 @@
 {
   "name": "css-font-variant",
-  "style": "font-variant.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-font-variant",
-  "description": "Css module of single purpose classes for font variant",
+  "version": "2.0.0",
+  "description": "Functional CSS for font-variant",
+  "style": "dist/font-variant.css",
+  "main": "dist/font-variant.css",
+  "exports": {
+    ".": "./dist/font-variant.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "font-variant"
+    "font-variant",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-font-variant": {
+  "homepage": "https://github.com/mrmrs/css-font-variant",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-font-variant.git"
+    "url": "https://github.com/mrmrs/css-font-variant.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-font-variant/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-font-variant/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
