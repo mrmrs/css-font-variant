@@ -1,116 +1,80 @@
-# css-font-variant 1.0.6
+# css-font-variant
 
-Css module of single purpose classes for font variant
+Functional CSS for font-variant
 
-#### Stats
+## Filesize
 
-210 | 16 | 12
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/font-variant.css` | 699 bytes |
+| `dist/font-variant.min.css` | 519 bytes (165 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-font-variant
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-font-variant
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-font-variant.git
+```sh
+npm install css-font-variant
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-font-variant";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-font-variant@1.0.6/css/css-font-variant.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-font-variant">
+<link rel="stylesheet" href="https://unpkg.com/css-font-variant/dist/font-variant.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   FONT VARIANT
-*/
-.fv-norm { font-variant: normal; }
-.fv-sc, .small-caps { font-variant: small-caps; }
-.fv-i { font-variant: inherit; }
-@media screen and (min-width: 48em) {
- .fv-norm-ns { font-variant: normal; }
- .fv-sc-ns, .small-caps-ns { font-variant: small-caps; }
- .fv-i-ns { font-variant: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .fv-norm-m { font-variant: normal; }
- .fv-sc-m, .small-caps-m { font-variant: small-caps; }
- .fv-i-m { font-variant: inherit; }
-}
-@media screen and (min-width: 64em) {
- .fv-norm-l { font-variant: normal; }
- .fv-sc-l, .small-caps-l { font-variant: small-caps; }
- .fv-i-l { font-variant: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-font-variant/dist/font-variant.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.fv-norm` | `font-variant: normal;` |
+| `.small-caps` | `font-variant: small-caps;` |
+| `.fv-i` | `font-variant: inherit;` |
+| `.fv-norm-s` | `font-variant: normal;` |
+| `.small-caps-s` | `font-variant: small-caps;` |
+| `.fv-i-s` | `font-variant: inherit;` |
+| `.fv-norm-m` | `font-variant: normal;` |
+| `.small-caps-m` | `font-variant: small-caps;` |
+| `.fv-i-m` | `font-variant: inherit;` |
+| `.fv-norm-l` | `font-variant: normal;` |
+| `.small-caps-l` | `font-variant: small-caps;` |
+| `.fv-i-l` | `font-variant: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.fv-norm-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/font-variant.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/font-variant.css` — formatted
+- `dist/font-variant.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
